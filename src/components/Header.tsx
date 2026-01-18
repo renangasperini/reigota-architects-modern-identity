@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+import logoBaunilha from "@/assets/logo-1.2-baunilha.png";
+import logoVinho from "@/assets/logo-1.2-vinho.png";
 
 const navLinks = [
   { href: "#inicio", label: "Início" },
@@ -47,7 +48,7 @@ const Header = () => {
       >
         <div className="container mx-auto px-6 md:px-12">
           <nav className="flex items-center justify-between h-20">
-            {/* Logo */}
+            {/* Logo - switches based on scroll state */}
             <a
               href="#inicio"
               onClick={(e) => {
@@ -57,11 +58,9 @@ const Header = () => {
               className="flex items-center"
             >
               <img
-                src={logo}
+                src={isScrolled ? logoVinho : logoBaunilha}
                 alt="Reigota Arquitetura"
-                className={`h-12 w-auto transition-all duration-500 ${
-                  isScrolled ? "brightness-0" : ""
-                }`}
+                className="h-10 md:h-12 w-auto transition-all duration-500"
               />
             </a>
 
