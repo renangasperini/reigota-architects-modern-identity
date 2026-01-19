@@ -121,12 +121,16 @@
   }
 
   body {
-    @apply bg-background text-foreground antialiased;
+    @apply bg-background text-foreground antialiased font-light;
     font-family: 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-semibold tracking-tight;
+    @apply font-normal tracking-tight;
+  }
+
+  p, span, a, li {
+    @apply font-light;
   }
 }
 

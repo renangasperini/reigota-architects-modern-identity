@@ -17,7 +17,7 @@ const Index = () => {
     // Simulate loading time for preloader animation
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2500);
+    }, 4000);
 
     return () => clearTimeout(timer);
   }, []);

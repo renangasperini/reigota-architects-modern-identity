@@ -158,7 +158,7 @@ const Preloader = ({ isLoading }: PreloaderProps) => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.6, ease: [0.16, 1, 0.3, 1] }}
-              className="w-40 md:w-56 lg:w-64"
+              className="w-24 md:w-32 lg:w-40"
             >
               <img
                 src={logo}
